@@ -4,21 +4,8 @@ public class EmpWage {
 	
 	public static final int IS_PART_TIME = 1;
 	public static final int IS_FULL_TIME = 2;
-	public static final int EMP_RATE_PER_HOUR = 20;
-	public static final int empWage = 0;
-	public static final int NUM_OF_WORKING_DAYS=20;
-	public static final int MAX_HRS_IN_MONTH = 100;
 
-	
-	
-	
-public static void main(String[] args) {
-		
-		System.out.println("Total Emp Wage: " +compute() ); 
-		
-
-	}
-private static int compute()
+public static int compute(String company ,int EMP_RATE_PER_HOUR,int NUM_OF_WORKING_DAYS, int MAX_HRS_IN_MONTH  )
 
 {  int empHrs = 0;
    int totalWorkingDays = 0;
@@ -51,4 +38,10 @@ private static int compute()
 	return totalEmpWage;	
 
 	}
+public static void main(String[] args) {
+	
+	compute("DMart",20, 2, 10 );
+	compute("Reliance",10, 4, 20 ); 
+	
+}
 }
